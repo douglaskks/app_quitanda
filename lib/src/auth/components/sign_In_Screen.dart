@@ -1,12 +1,21 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:app_quitanda/src/auth/components/custom_text_fields.dart';
+import 'package:app_quitanda/src/auth/components/sign_up_Screen.dart';
+import 'package:app_quitanda/src/auth/config/custom_text_fields.dart';
 import 'package:app_quitanda/src/auth/config/custom_colors.dart';
+import 'package:app_quitanda/src/base/base_screnn.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
 class SignInScreen extends StatelessWidget {
-  const SignInScreen({Key? key});
+  SignInScreen({Key? key});
+
+  final cpfFormater = MaskTextInputFormatter(mask: '###.###.###-##', filter: {
+    '#': RegExp(
+      r'[0-9]',
+    ),
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -78,6 +87,8 @@ class SignInScreen extends StatelessWidget {
                       label: 'Senha',
                       isSecret: true,
                     ),
+
+                    //Botão de Entrar
                     SizedBox(
                       height: 50,
                       width: 120,
@@ -87,7 +98,15 @@ class SignInScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(18),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(
+                              builder: (c) {
+                                return BaseScreen();
+                              },
+                            ),
+                          );
+                        },
                         child: const Text(
                           "Entrar",
                           style: TextStyle(fontSize: 18),
@@ -129,7 +148,13 @@ class SignInScreen extends StatelessWidget {
                         style: OutlinedButton.styleFrom(
                           side: BorderSide(width: 2, color: Colors.green),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(builder: (c) {
+                              return SignUpScreen();
+                            }),
+                          );
+                        },
                         child: Text("Criar Conta"),
                       ),
                     ),
