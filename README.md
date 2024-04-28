@@ -1,16 +1,12 @@
-# app_quitanda
+# Aplicativo para quitandas
 
-A new Flutter project.
+Um projeto para fim de aprendizado, utilizando linguagem de programação Dart e o Framework Flutter
 
-## Getting Started
+## Sobre
 
-This project is a starting point for a Flutter application.
+O aplicativo tem como objetivo colocar em prática o Front-End Mobile, Gerenciamento de Estado com o GetX e a lógica por trás dos panos no Desenvolvimento Mobile.
 
-A few resources to get you started if this is your first Flutter project:
+- Dart
+- Flutter
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+O App consiste em abordar as principais telas que um projeto real para venda de Software para pequenos e grandes negócios, locais ou nacionais, a lógica é trabalhada desde a tela de login até a tela de pagamento.
