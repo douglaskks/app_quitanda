@@ -1,5 +1,5 @@
-import 'package:app_quitanda/src/auth/config/custom_colors.dart';
-import 'package:app_quitanda/src/auth/config/custom_text_fields.dart';
+import 'package:app_quitanda/src/config/custom_colors.dart';
+import 'package:app_quitanda/src/config/custom_text_fields.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

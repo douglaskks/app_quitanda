@@ -1,3 +1,4 @@
+import 'package:app_quitanda/src/Pages/home/home_tab.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -20,9 +21,7 @@ class _BaseScreenState extends State<BaseScreen> {
         physics: const NeverScrollableScrollPhysics(),
         controller: widget.pageController,
         children: [
-          Container(
-            color: Colors.red,
-          ),
+          HomeTab(),
           Container(
             color: Colors.yellow,
           ),
