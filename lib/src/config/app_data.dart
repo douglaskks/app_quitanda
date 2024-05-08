@@ -30,7 +30,7 @@ ItemModel guava = ItemModel(
 ItemModel kiwi = ItemModel(
   itemName: 'Kiwi',
   imgUrl: 'assets/fruits/kiwi.png',
-  unit: 'kg',
+  unit: 'un',
   price: 2.5,
   description:
       'A coloração dos frutos é marrom e sua superfície é repleta de pelos pardos. As sementes são pequenas, pretas e estão dispostas radialmente na polpa verde do fruto.',
