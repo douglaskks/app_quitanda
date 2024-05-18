@@ -1,6 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:app_quitanda/src/Pages/auth/components/sign_up_Screen.dart';
-import 'package:app_quitanda/src/config/custom_text_fields.dart';
+import 'package:app_quitanda/src/Pages/common_widgets/custom_text_fields.dart';
 import 'package:app_quitanda/src/config/custom_colors.dart';
 import 'package:app_quitanda/src/Pages/base/base_screnn.dart';
 import 'package:flutter/cupertino.dart';

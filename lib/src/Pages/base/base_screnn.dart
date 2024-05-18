@@ -1,3 +1,4 @@
+import 'package:app_quitanda/src/Pages/Profile/profile_tab.dart';
 import 'package:app_quitanda/src/Pages/cart/cart_tab.dart';
 import 'package:app_quitanda/src/Pages/home/home_tab.dart';
 import 'package:flutter/cupertino.dart';
@@ -27,9 +28,7 @@ class _BaseScreenState extends State<BaseScreen> {
           Container(
             color: Colors.blue,
           ),
-          Container(
-            color: Colors.purple,
-          ),
+          const ProfileTab(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
