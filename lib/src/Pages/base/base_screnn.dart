@@ -1,6 +1,7 @@
 import 'package:app_quitanda/src/Pages/Profile/profile_tab.dart';
 import 'package:app_quitanda/src/Pages/cart/cart_tab.dart';
 import 'package:app_quitanda/src/Pages/home/home_tab.dart';
+import 'package:app_quitanda/src/Pages/orders/orders_tabs.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -25,9 +26,7 @@ class _BaseScreenState extends State<BaseScreen> {
         children: [
           const HomeTab(),
           CartTab(),
-          Container(
-            color: Colors.blue,
-          ),
+          const OrdersTab(),
           const ProfileTab(),
         ],
       ),
