@@ -47,7 +47,7 @@ class _BaseScreenState extends State<BaseScreen> {
             icon: Icon(
               Icons.home_outlined,
             ),
-            label: 'Home',
+            label: 'Inicio',
           ),
           BottomNavigationBarItem(
             // Removido o const
