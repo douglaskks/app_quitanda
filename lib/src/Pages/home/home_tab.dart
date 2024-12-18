@@ -1,12 +1,9 @@
 import 'package:app_quitanda/src/Pages/home/components/Category_Tile.dart';
 import 'package:app_quitanda/src/Pages/home/components/Item_Tile.dart';
 import 'package:badges/badges.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as BadgePackage;
 import 'package:app_quitanda/src/config/custom_colors.dart';
-import 'package:flutter/widgets.dart';
 import 'package:app_quitanda/src/config/app_data.dart' as appData;
 
 class HomeTab extends StatefulWidget {
@@ -28,7 +25,7 @@ class _HomeTabState extends State<HomeTab> {
         elevation: 0,
         title: Text.rich(
           TextSpan(
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 30,
             ),
             children: [
@@ -54,7 +51,7 @@ class _HomeTabState extends State<HomeTab> {
               badgeColor: CustomColors.customContrastColor,
               position:
                   BadgePosition.topEnd(top: 0, end: 3), // Posição do badge
-              badgeContent: Text(
+              badgeContent: const Text(
                 '2',
                 style: TextStyle(color: Colors.white),
               ), // Conteúdo do badge (opcional)

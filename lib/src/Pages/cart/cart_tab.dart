@@ -2,7 +2,6 @@ import 'package:app_quitanda/src/Models/cart_item_model.dart';
 import 'package:app_quitanda/src/Pages/cart/Components/Cart_tile.dart';
 import 'package:app_quitanda/src/Services/utils_services.dart';
 import 'package:app_quitanda/src/config/custom_colors.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:app_quitanda/src/config/app_data.dart' as appData;
 
@@ -35,7 +34,7 @@ class _CartTabState extends State<CartTab> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Carrinho',
           style: TextStyle(color: Colors.white),
         ),
@@ -72,7 +71,7 @@ class _CartTabState extends State<CartTab> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Text(
+                const Text(
                   'Total geral',
                   style: TextStyle(
                     fontSize: 12,

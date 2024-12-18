@@ -1,8 +1,11 @@
-import 'package:flutter/cupertino.dart';
+import 'package:app_quitanda/src/Pages/orders/components/order_tile.dart';
 import 'package:flutter/material.dart';
+import 'package:app_quitanda/src/config/app_data.dart' as appData;
 
 class OrdersTab extends StatelessWidget {
   const OrdersTab({super.key});
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -16,12 +19,12 @@ class OrdersTab extends StatelessWidget {
           padding: const EdgeInsets.all(
             16,
           ),
-          physics: BouncingScrollPhysics(),
-          itemBuilder: itemBuilder,
+          physics: const BouncingScrollPhysics(),
+          itemBuilder: (_, index) => OrderTile(order: appData.orders[index],),
           separatorBuilder: (_, index) => const SizedBox(
                 height: 10,
               ),
-          itemCount: itemCount),
+          itemCount: appData.orders.length),
     );
   }
 }

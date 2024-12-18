@@ -2,9 +2,7 @@ import 'package:app_quitanda/src/Models/item_model.dart';
 import 'package:app_quitanda/src/Pages/common_widgets/quantity_widget.dart';
 import 'package:app_quitanda/src/Services/utils_services.dart';
 import 'package:app_quitanda/src/config/custom_colors.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class ProductScreen extends StatefulWidget {
   ProductScreen({super.key, required this.item});
@@ -39,7 +37,7 @@ class _ProductScreenState extends State<ProductScreen> {
                   padding: const EdgeInsets.all(32),
                   decoration: const BoxDecoration(
                       color: Colors.white,
-                      borderRadius: const BorderRadius.vertical(
+                      borderRadius: BorderRadius.vertical(
                         top: Radius.circular(50),
                       ),
                       boxShadow: [
@@ -109,7 +107,7 @@ class _ProductScreenState extends State<ProductScreen> {
                         height: 55,
                         child: ElevatedButton.icon(
                           onPressed: () {},
-                          label: Text(
+                          label: const Text(
                             'Adicionar ao carrinho',
                             style: TextStyle(
                               color: Colors.green,

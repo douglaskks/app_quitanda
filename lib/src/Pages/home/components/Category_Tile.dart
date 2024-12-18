@@ -1,5 +1,4 @@
 import 'package:app_quitanda/src/config/custom_colors.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CategoryTile extends StatelessWidget {
@@ -20,7 +19,7 @@ class CategoryTile extends StatelessWidget {
       child: Align(
         alignment: Alignment.center,
         child: Container(
-          padding: EdgeInsets.symmetric(
+          padding: const EdgeInsets.symmetric(
             horizontal: 6,
           ),
           decoration: BoxDecoration(
